@@ -1,5 +1,3 @@
-# kifiya_week3
-
 # Task 1: Exploratory Data Analysis (EDA)
 ## Objective
 
