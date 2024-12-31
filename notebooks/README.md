@@ -45,3 +45,63 @@ Steps Performed
 ## Conclusion
 
 Through this EDA, we have gained a better understanding of the dataset's structure and key trends. The insights generated will be valuable for further modeling and decision-making, as well as for identifying areas that may require additional cleaning or transformation.
+
+
+# Task 3: A/B Hypothesis Testing
+
+## Overview
+
+This task involves performing A/B hypothesis testing to evaluate the impact of various features on key performance indicators (KPIs). Specifically, we test for significant differences in risk and profit margins across different customer segments such as provinces, zip codes, and gender.
+### Hypotheses Tested:
+
+    Risk Differences Across Provinces: There are no significant risk differences across provinces.
+    Risk Differences Between Zip Codes: There are no significant risk differences between zip codes.
+    Significant Margin Differences Between Zip Codes: There are no significant margin differences between zip codes.
+    Risk Differences Between Genders: There are no significant risk differences between men and women.
+
+### Key Performance Indicators (KPIs)
+
+    Risk Metrics: Total Claims, Total Premiums
+    Margin Metrics: Calculated as: Margin = TotalPremium - TotalClaims
+
+### Data Segmentation
+
+    Group A (Control Group): Plans without the feature (e.g., gender, province, or zip code).
+    Group B (Test Group): Plans with the feature being tested (e.g., male vs. female, different provinces, zip codes).
+
+### Methodology
+
+#### The following statistical tests were conducted:
+
+    Chi-Squared Test for categorical data:
+        Used to test the hypothesis for risk differences across provinces and genders.
+    T-Test for numerical data:
+        Used to test the hypothesis for margin differences between zip codes.
+
+### Test Assumptions:
+
+    Chi-Squared Test assumes that the data follows a categorical distribution.
+    T-Test assumes that the data follows a normal distribution and that the variances are unequal across groups.
+
+### Results
+
+#### Based on the statistical testing, the following conclusions were drawn:
+
+    Risk Differences Across Provinces:
+        Chi-Squared Stat: 31.91
+        P-Value: 9.68e-05
+        Conclusion: Significant risk differences exist across provinces.
+
+    Risk Differences Between Genders:
+        Chi-Squared Stat: 13.57
+        P-Value: 0.00023
+        Conclusion: Significant risk differences exist between genders.
+
+    Margin Differences Between Zip Codes:
+        T-Stat: 2.32
+        P-Value: 0.0246
+        Conclusion: Significant margin differences exist between the selected zip codes.
+
+## Conclusion
+
+This analysis provides valuable insights into risk and profit margin differences across customer segments. The findings will help guide future business strategies related to pricing, risk management, and customer segmentation.
