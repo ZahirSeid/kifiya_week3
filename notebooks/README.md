@@ -105,3 +105,51 @@ This task involves performing A/B hypothesis testing to evaluate the impact of v
 ## Conclusion
 
 This analysis provides valuable insights into risk and profit margin differences across customer segments. The findings will help guide future business strategies related to pricing, risk management, and customer segmentation.
+
+# Task 4: Statistical Modeling
+## Overview
+
+In Task 4, we focused on applying statistical and machine learning techniques to model and predict the target variables, TotalPremium and TotalClaims. The task involved preparing the data for modeling, implementing various machine learning algorithms, evaluating model performance, and analyzing feature importance using SHAP values. The models evaluated include Linear Regression, Decision Trees, Random Forests, and XGBoost.
+
+### Tasks Completed
+1. Data Preparation:
+
+    Handling Missing Data: We identified and handled missing data by either imputing missing values (e.g., using the mean or median for continuous variables) or removing rows with significant missing data.
+    Feature Engineering: We created new features that could improve the model’s predictive capabilities for TotalPremium and TotalClaims.
+    Encoding Categorical Data: Categorical variables were encoded into numeric format using methods such as one-hot encoding or label encoding, making the data suitable for machine learning models.
+    Train-Test Split: We split the data into training and testing sets, using 80:20 ratio to ensure model validation on unseen data.
+
+2. Modeling Techniques:
+
+    We implemented multiple machine learning algorithms, including:
+        Linear Regression: A basic regression model used as a baseline.
+        Decision Trees: A tree-based model that splits data based on feature values.
+        Random Forests: An ensemble method combining multiple decision trees to improve accuracy.
+        XGBoost: A powerful gradient boosting algorithm that builds strong predictive models by combining weak learners.
+
+3. Model Evaluation:
+
+    We evaluated the performance of each model using appropriate metrics, including:
+        Accuracy: The percentage of correctly predicted instances.
+        Precision: The proportion of positive predictions that were actually correct.
+        Recall: The proportion of actual positives that were correctly predicted.
+        F1-Score: The harmonic mean of precision and recall, providing a balance between them.
+
+4. Feature Importance Analysis:
+
+    Using SHAP (SHapley Additive exPlanations) values, we analyzed the influence of each feature on model predictions. SHAP values provided a way to interpret the model’s decisions and determine the importance of individual features.
+
+5. Interpretation of Model Results:
+
+    We identified the most important features influencing TotalPremium and TotalClaims predictions, helping to refine the modeling process and make more informed decisions about future data collection and feature engineering.
+
+### Insights Gained
+
+    The models highlighted several key features that were crucial for predicting the target variables. This insight will be used to improve future feature engineering.
+    RandomForest showed superior performance compared to other models, providing the best balance of accuracy, precision, and recall.
+    The analysis of feature importance using SHAP values helped in understanding which features most strongly influenced model predictions, guiding further model improvement and potential adjustments to the dataset.
+
+
+## Conclusion
+
+Task 4 successfully applied statistical and machine learning techniques to model TotalPremium and TotalClaims. By handling missing data, engineering new features, and implementing multiple machine learning models, we were able to evaluate model performance and identify important features that influence the predictions. The next steps will involve refining the models and deploying them for further use.
